@@ -9,7 +9,7 @@
 
 </script>
 <svelte:head>
-    <title>Transit Fund</title>
+    <title>Game of Life</title>
 </svelte:head>
 
 <style>
@@ -30,40 +30,33 @@
 </style>
 
 <header class="d-flex flex-column align-items-center">
-    <img class="logo-img" alt="Transit" lass="logo-img" src="logo_invert.png">
+    <img class="logo-img" alt="Dice" src="dice.png">
     <button on:click="{ () => goto('pension') }"><a style="display: none;" href="pension">_</a>
         {#if loading}
         <i class="fas fa-spinner fa-spin"></i>
         {:else if join}
-        Join Transit
+        Join
         {:else}
-        Manage Pension
+        Am I still alive?
         {/if}
     </button>
 </header>
 
 <section class="container-fluid index-section" style="text-align: center">
 
-    <h1>What is Transit?</h1>
     <div class="row">
 
         <div class="col-sm">
-            <span style="font-size: 47px; color: #00e8d5; padding-right: 10px">
-                <i class="fas fa-users"></i>
-            </span>
-            <h4 class="h5"> Transit is a cooperatively owned Pension Plan based on the Ethereum Network</h4>
+            <h1> 403 DAI</h1>
+            <h4 class="h5"> Total fund in the pool </h4>
         </div>
         <div class="col-sm">
-            <span style="font-size: 47px; color: #00e8d5; padding-right: 10px">
-                <i class="fas fa-dharmachakra"></i>
-            </span>
-            <h4 class="h5">No stockholders. No corporations. Run entirely by those who invest in it</h4>
+            <h1> 403 / 700 </h1>
+            <h4 class="h5">Surving players</h4>
         </div>
         <div class="col-sm">
-            <span style="font-size: 47px; color: #00e8d5; padding-right: 10px">
-                <i class="far fa-hand-point-down"></i>
-            </span>
-            <h4 class="h5">YOU decide on your future financial security.</h4>
+            <h1> 18hr 15min </h1>
+            <h4 class="h5">Time till next Era</h4>
         </div>
     </div>
 

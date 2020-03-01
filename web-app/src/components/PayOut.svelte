@@ -1,6 +1,5 @@
 <script>
     import { BigNumber } from 'ethers';
-
     import wallet from '../stores/wallet';
     import userPensionData from '../stores/userPensionData';
     
@@ -13,7 +12,6 @@
         return d ? getDateString(d.toNumber() * 1000) : ''
     }
 
-    
 </script>
 
 <style>
